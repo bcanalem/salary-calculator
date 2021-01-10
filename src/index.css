@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.default-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.padding {
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+main input {
+  width: 100%;
+}
+
+main h1 {
+  align-self: center;
+}
+
+main label {
+  font-size: smaller;
+}
+
+.campos_calculos {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.campos_calculos input {
+  font-weight: bold;
+}
+
+#desconto_inss {
+  color: #e67e22;
+}
+
+#desconto_irpf {
+  color: #c0392b;
+}
+
+#salario_liquido {
+  color: #16a085;
+}
+
+main .barra {
+  margin-top: 32px;
+  height: 20px;
+  width: 100%;
+  border: 1px solid #808080;
+  border-radius: 3px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+main .barra .barra_liquido {
+  background: #16a085;
+  width: 100%;
+}
+
+main .barra .barra_inss {
+  background: #e67e22;
+}
+
+main .barra .barra_irpf {
+  background: #c0392b;
+}
